@@ -1,0 +1,22 @@
+<Project>
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+    <Deterministic>true</Deterministic>
+    <Version>0.1.0</Version>
+    <Authors>codemetr</Authors>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/codemetr/Codemetr.CSharp.Cover</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/codemetr/Codemetr.CSharp.Cover</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Copyright>Copyright (c) 2026 codemetr</Copyright>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <!-- Member identity and complexity come from the Codemetr.CSharp library shipped inside this tool package. -->
+    <CodemetrCSharpVersion>0.1.0</CodemetrCSharpVersion>
+  </PropertyGroup>
+</Project>

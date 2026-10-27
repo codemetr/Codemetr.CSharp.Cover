@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "isRoot": true,
+  "tools": {
+    "codemetr.csharp.tool": {
+      "version": "0.1.0",
+      "commands": [
+        "codemetr-csharp"
+      ],
+      "rollForward": false
+    }
+  }
+}

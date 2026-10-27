@@ -1,0 +1,9 @@
+<Project>
+  <!-- Codemetr.CSharp is published only inside its tool package; reference the library from there, pinned. -->
+  <ItemGroup>
+    <PackageDownload Include="Codemetr.CSharp.Tool" Version="[$(CodemetrCSharpVersion)]" />
+    <Reference Include="Codemetr.CSharp">
+      <HintPath>$(NuGetPackageRoot)codemetr.csharp.tool/$(CodemetrCSharpVersion)/tools/net10.0/any/Codemetr.CSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

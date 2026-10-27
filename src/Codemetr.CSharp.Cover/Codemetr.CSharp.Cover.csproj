@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>Codemetr.CSharp.Cover</PackageId>
+    <Description>C# line and branch coverage per type and member from Coverlet reports, with diff coverage, CRAP risk, a guard and a ratchet baseline.</Description>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <!-- Not published on its own: it references Codemetr.CSharp from the tool package below. -->
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" />
+    <PackageReference Include="Microsoft.Extensions.FileSystemGlobbing" />
+  </ItemGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="Codemetr.CSharp.Cover.Tests" />
+  </ItemGroup>
+  <Import Project="../../eng/CodemetrCSharp.targets" />
+</Project>

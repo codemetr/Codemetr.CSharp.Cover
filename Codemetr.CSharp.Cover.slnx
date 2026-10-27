@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="src/Codemetr.CSharp.Cover/Codemetr.CSharp.Cover.csproj" />
+  <Project Path="src/Codemetr.CSharp.Cover.Tool/Codemetr.CSharp.Cover.Tool.csproj" />
+  <Project Path="tests/Codemetr.CSharp.Cover.Tests/Codemetr.CSharp.Cover.Tests.csproj" />
+</Solution>

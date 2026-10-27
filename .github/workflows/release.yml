@@ -1,0 +1,88 @@
+name: release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'NuGet version (for example 0.1.0 or 0.2.0-rc.1)'
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: nuget-release
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    permissions:
+      contents: read
+      id-token: write
+    runs-on: ubuntu-latest
+    environment: nuget
+    env:
+      PACKAGE_VERSION: ${{ inputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+      - name: Validate package version
+        shell: bash
+        run: |
+          if [[ ! "$PACKAGE_VERSION" =~ ^(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)(-[0-9A-Za-z-]+(\.[0-9A-Za-z-]+)*)?$ ]]; then
+            echo '::error::Use a version such as 0.1.0 or 0.2.0-rc.1.'
+            exit 1
+          fi
+      - run: dotnet restore --locked-mode
+      - name: Build
+        run: dotnet build -c Release --no-restore -p:ContinuousIntegrationBuild=true -p:Version="$PACKAGE_VERSION"
+      - name: Test
+        run: dotnet test -c Release --no-build
+        env:
+          CODEMETR_COVER_INTEGRATION: '1'
+      - name: Guard own metrics
+        run: bash scripts/check-metrics.sh
+      - name: Guard own coverage
+        run: bash scripts/check-coverage.sh origin/main
+        env:
+          CODEMETR_COVER_INTEGRATION: '1'
+      - name: Pack tool
+        run: dotnet pack src/Codemetr.CSharp.Cover.Tool/Codemetr.CSharp.Cover.Tool.csproj -c Release --no-build -p:ContinuousIntegrationBuild=true -p:Version="$PACKAGE_VERSION" -o artifacts
+      - name: Smoke-test packaged tool
+        shell: bash
+        run: |
+          printf '%s\n' '<configuration><packageSources><clear /></packageSources></configuration>' > "$RUNNER_TEMP/smoke-nuget.config"
+          dotnet tool install Codemetr.CSharp.Cover.Tool --tool-path "$RUNNER_TEMP/cover-tool" --configfile "$RUNNER_TEMP/smoke-nuget.config" --add-source "$GITHUB_WORKSPACE/artifacts" --version "$PACKAGE_VERSION" --no-cache
+          "$RUNNER_TEMP/cover-tool/codemetr-csharp-cover" --help
+          "$RUNNER_TEMP/cover-tool/codemetr-csharp-cover" doctor --root tests/fixtures/Sample --format text
+      - uses: actions/upload-artifact@v4
+        with:
+          name: tool-${{ inputs.version }}
+          path: artifacts/*.nupkg
+          if-no-files-found: error
+      - name: Validate NuGet identity
+        env:
+          NUGET_USER: ${{ secrets.NUGET_USER }}
+        shell: bash
+        run: |
+          if [[ -z "$NUGET_USER" ]]; then
+            echo '::error::Configure NUGET_USER in the nuget environment with your personal NuGet profile name (not an email or organization name).'
+            exit 1
+          fi
+      - name: NuGet login (OIDC)
+        uses: NuGet/login@8d196754b4036150537f80ac539e15c2f1028841 # v1
+        id: login
+        with:
+          user: ${{ secrets.NUGET_USER }}
+      - name: Publish tool to NuGet
+        env:
+          NUGET_API_KEY: ${{ steps.login.outputs.NUGET_API_KEY }}
+        shell: bash
+        run: |
+          dotnet nuget push "artifacts/Codemetr.CSharp.Cover.Tool.$PACKAGE_VERSION.nupkg" --api-key "$NUGET_API_KEY" --source https://api.nuget.org/v3/index.json

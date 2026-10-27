@@ -1,0 +1,1571 @@
+{
+  "schema": 1,
+  "recordedAt": {
+    "thresholds": {
+      "lineCoverage": 0,
+      "branchCoverage": 0,
+      "typeLineCoverage": 0,
+      "memberLineCoverage": 0,
+      "diffLineCoverage": 80,
+      "diffBranchCoverage": 60,
+      "crapScore": 30
+    }
+  },
+  "members": [
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.BaselineCommand",
+      "member": "Input(RunContext, CoverageModel, Evidence, DiffResult?, string)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/BaselineCommand.cs",
+      "line": 77.7,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.BaselineCommand",
+      "member": "Record(RunContext, GuardInput, GuardResult, IReadOnlyList<ParseError>, string, string?)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/BaselineCommand.cs",
+      "line": 92.8,
+      "branch": 70
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.CliOptions",
+      "member": "Parse(string[], TextReader)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/CliOptions.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.CliParser",
+      "member": ".ctor(TextReader)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/CliParser.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.CliParser",
+      "member": "Accept(string[], int)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/CliParser.cs",
+      "line": 72.7,
+      "branch": 58.3
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.CliParser",
+      "member": "Below(string[], int)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/CliParser.cs",
+      "line": 100,
+      "branch": 75
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.CliParser",
+      "member": "Build(string)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/CliParser.cs",
+      "line": 90.9,
+      "branch": 80.7
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.CliParser",
+      "member": "NonNegative(string)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/CliParser.cs",
+      "line": 100,
+      "branch": 75
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.CliParser",
+      "member": "OneOf(string, IReadOnlyList<string>, string)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/CliParser.cs",
+      "line": 100,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.CliParser",
+      "member": "Parse(string[], TextReader)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/CliParser.cs",
+      "line": 100,
+      "branch": 92.8
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.CliParser",
+      "member": "PathMap(string)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/CliParser.cs",
+      "line": 0,
+      "branch": 0
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.CliParser",
+      "member": "ReadFileList(string)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/CliParser.cs",
+      "line": 0,
+      "branch": 0
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.CliParser",
+      "member": "ReadLines(TextReader)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/CliParser.cs",
+      "line": 0,
+      "branch": 0
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.CliParser",
+      "member": "TryPercent(string, out double?)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/CliParser.cs",
+      "line": 100,
+      "branch": 70
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.CliParser",
+      "member": "TryThresholds(string, out double?, out double?)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/CliParser.cs",
+      "line": 100,
+      "branch": 70
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.CliParser",
+      "member": "Worklist(string, CoverRequest)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/CliParser.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.CoverService",
+      "member": "Model(RunContext, Evidence, IReadOnlyList<SourceFile>, IReadOnlyList<ParseError>)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/CoverService.cs",
+      "line": 80,
+      "branch": 72.2
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.CoverService",
+      "member": "Run(string, CoverRequest, CancellationToken)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/CoverService.cs",
+      "line": 100,
+      "branch": 75
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.RunState",
+      "member": "Command.get",
+      "file": "src/Codemetr.CSharp.Cover.Tool/CoverService.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.RunState",
+      "member": "Partial.get",
+      "file": "src/Codemetr.CSharp.Cover.Tool/CoverService.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.RunState",
+      "member": "Request.get",
+      "file": "src/Codemetr.CSharp.Cover.Tool/CoverService.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.RunState",
+      "member": "Warnings.get",
+      "file": "src/Codemetr.CSharp.Cover.Tool/CoverService.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.SourceSelection",
+      "member": "Collect(RunContext, IReadOnlyList<TestProject>)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/CoverService.cs",
+      "line": 90.9,
+      "branch": 60
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.SourceSelection",
+      "member": "Collect(RunContext, IReadOnlyList<TestProject>).IsTestSource(string)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/CoverService.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.DiffCollector",
+      "member": "Changes(RunContext, GitState)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/DiffCollector.cs",
+      "line": 93.7,
+      "branch": 72.2
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.DiffCollector",
+      "member": "Collect(RunContext, GitState, CoverageModel, Func<string, bool>, IReadOnlySet<string>)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/DiffCollector.cs",
+      "line": 100,
+      "branch": 75
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.GitState",
+      "member": "Read(string)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/DiffCollector.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.DoctorCommand",
+      "member": "RunAsync(CliOptions, TextWriter, JsonSerializerOptions)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/DoctorCommand.cs",
+      "line": 100,
+      "branch": 75
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.EvidenceCollector",
+      "member": "AttributeResults(RunContext, IReadOnlyList<TestProject>, string[])",
+      "file": "src/Codemetr.CSharp.Cover.Tool/EvidenceCollector.cs",
+      "line": 62.5,
+      "branch": 55.5
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.EvidenceCollector",
+      "member": "AttributeResults(RunContext, IReadOnlyList<TestProject>, string[]).Add(string, TestProject?, List<string>)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/EvidenceCollector.cs",
+      "line": 100,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.EvidenceCollector",
+      "member": "CheckFreshness(RunContext, Evidence, IReadOnlyList<SourceFile>)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/EvidenceCollector.cs",
+      "line": 100,
+      "branch": 83.3
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.EvidenceCollector",
+      "member": "Collect(RunContext, IReadOnlyList<TestProject>, IReadOnlyList<TestProject>, CancellationToken)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/EvidenceCollector.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.EvidenceCollector",
+      "member": "CoverletFilterWarnings(string, IReadOnlyList<TestProject>)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/EvidenceCollector.cs",
+      "line": 77.7,
+      "branch": 75
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.EvidenceCollector",
+      "member": "Expand(string, IReadOnlyList<string>, string)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/EvidenceCollector.cs",
+      "line": 100,
+      "branch": 66.6
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.EvidenceCollector",
+      "member": "FromReports(RunContext, IReadOnlyList<TestProject>)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/EvidenceCollector.cs",
+      "line": 83.3,
+      "branch": 83.3
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.EvidenceCollector",
+      "member": "FromRun(RunContext, IReadOnlyList<TestProject>, CancellationToken)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/EvidenceCollector.cs",
+      "line": 77.7,
+      "branch": 25
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.EvidenceCollector",
+      "member": "MapReport(RunContext, string, PathMapper)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/EvidenceCollector.cs",
+      "line": 44.4,
+      "branch": 25
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.EvidenceCollector",
+      "member": "Mapper(RunContext)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/EvidenceCollector.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.EvidenceCollector",
+      "member": "ReadResults(RunContext, string, List<string>)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/EvidenceCollector.cs",
+      "line": 50,
+      "branch": 37.5
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.EvidenceCollector",
+      "member": "TrxAssemblies(string)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/EvidenceCollector.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.Git",
+      "member": "Diff(string)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/Git.cs",
+      "line": 100,
+      "branch": 90
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.Git",
+      "member": "Dirty()",
+      "file": "src/Codemetr.CSharp.Cover.Tool/Git.cs",
+      "line": 100,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.Git",
+      "member": "Head()",
+      "file": "src/Codemetr.CSharp.Cover.Tool/Git.cs",
+      "line": 100,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.Git",
+      "member": "IsRepository.get",
+      "file": "src/Codemetr.CSharp.Cover.Tool/Git.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.Git",
+      "member": "MergeBase(string)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/Git.cs",
+      "line": 66.6,
+      "branch": 40
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.Git",
+      "member": "Run(params string[])",
+      "file": "src/Codemetr.CSharp.Cover.Tool/Git.cs",
+      "line": 66.6
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.Git",
+      "member": "Short(string)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/Git.cs",
+      "line": 0,
+      "branch": 0
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.GithubReport",
+      "member": "Escape(string, bool)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/GithubReport.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.GithubReport",
+      "member": "Summary(CoverReport, ReportSummary, string)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/GithubReport.cs",
+      "line": 100,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.GithubReport",
+      "member": "Write(CoverReport, TextWriter)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/GithubReport.cs",
+      "line": 87.5,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TypeName",
+      "member": "Matches(string, string)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/Naming.cs",
+      "line": 66.6,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TypeName",
+      "member": "Simple(string)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/Naming.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TypeName",
+      "member": "WithoutTypeParameters(string)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/Naming.cs",
+      "line": 100,
+      "branch": 62.5
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.UnmeasuredDeclarations",
+      "member": "Contains(string)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/Naming.cs",
+      "line": 0,
+      "branch": 0
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.ProcessResult",
+      "member": "Combined.get",
+      "file": "src/Codemetr.CSharp.Cover.Tool/ProcessRunner.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.ProcessResult",
+      "member": "Tail(int)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/ProcessRunner.cs",
+      "line": 0
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.ProcessRunner",
+      "member": "Run(string, IEnumerable<string>, string, CancellationToken)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/ProcessRunner.cs",
+      "line": 96.6,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.Program",
+      "member": "Describe(Exception)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/Program.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.Program",
+      "member": "ExecuteAsync(CliOptions, TextWriter, TextWriter)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/Program.cs",
+      "line": 100,
+      "branch": 91.6
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.Program",
+      "member": "Main(string[])",
+      "file": "src/Codemetr.CSharp.Cover.Tool/Program.cs",
+      "line": 0
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.Program",
+      "member": "RunAsync(string[], TextReader, TextWriter, TextWriter)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/Program.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.Program",
+      "member": "WriteInputError(CliOptions, InputError, TextWriter, TextWriter)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/Program.cs",
+      "line": 100,
+      "branch": 75
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.ReportBuilder",
+      "member": "Build(RunState, bool)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/ReportBuilder.cs",
+      "line": 100,
+      "branch": 81.2
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.ReportBuilder",
+      "member": "Order(IEnumerable<Finding>)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/ReportBuilder.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.ReportBuilder",
+      "member": "Pct(double?)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/ReportBuilder.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.ReportBuilder",
+      "member": "Summary(RunState, Finding[], int, WorklistSection?)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/ReportBuilder.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.ReportSections",
+      "member": "Diff(RunState, int)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/ReportSections.cs",
+      "line": 85.7,
+      "branch": 66.6
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.ReportSections",
+      "member": "Exclusions(RunState)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/ReportSections.cs",
+      "line": 66.6,
+      "branch": 20
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.ReportSections",
+      "member": "Hotspots(CoverageModel, int)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/ReportSections.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.RunContext",
+      "member": "Configuration.get",
+      "file": "src/Codemetr.CSharp.Cover.Tool/RunContext.cs",
+      "line": 100,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.RunContext",
+      "member": "Create(string, CoverRequest)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/RunContext.cs",
+      "line": 100,
+      "branch": 80
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.RunContext",
+      "member": "HasTestFilter.get",
+      "file": "src/Codemetr.CSharp.Cover.Tool/RunContext.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.RunContext",
+      "member": "NotePartialScope(int, int)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/RunContext.cs",
+      "line": 87.5,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.RunContext",
+      "member": "Target.get",
+      "file": "src/Codemetr.CSharp.Cover.Tool/RunContext.cs",
+      "line": 100,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.RunContext",
+      "member": "TestArgs.get",
+      "file": "src/Codemetr.CSharp.Cover.Tool/RunContext.cs",
+      "line": 100,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.RunContext",
+      "member": "Unreported.get",
+      "file": "src/Codemetr.CSharp.Cover.Tool/RunContext.cs",
+      "line": 100,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.RunContext",
+      "member": "Verdict.get",
+      "file": "src/Codemetr.CSharp.Cover.Tool/RunContext.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TestProject",
+      "member": "Engine.get",
+      "file": "src/Codemetr.CSharp.Cover.Tool/TestProjects.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TestProject",
+      "member": "Frameworks.get",
+      "file": "src/Codemetr.CSharp.Cover.Tool/TestProjects.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TestProject",
+      "member": "Has(string)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/TestProjects.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TestProject",
+      "member": "Problems()",
+      "file": "src/Codemetr.CSharp.Cover.Tool/TestProjects.cs",
+      "line": 100,
+      "branch": 87.5
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TestProject",
+      "member": "RequiredEngine.get",
+      "file": "src/Codemetr.CSharp.Cover.Tool/TestProjects.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TestProjects",
+      "member": "Candidates(string, string?)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/TestProjects.cs",
+      "line": 76.4,
+      "branch": 66.6
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TestProjects",
+      "member": "Discover(string, string?, string, IReadOnlyCollection<string>, CancellationToken)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/TestProjects.cs",
+      "line": 100,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TestProjects",
+      "member": "Enumerate(string)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/TestProjects.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TestProjects",
+      "member": "Evaluate(string, string, string, CancellationToken)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/TestProjects.cs",
+      "line": 90.4,
+      "branch": 78.5
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TestProjects",
+      "member": "Evaluate(string, string, string, CancellationToken).Items(string, string)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/TestProjects.cs",
+      "line": 100,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TestProjects",
+      "member": "Evaluate(string, string, string, CancellationToken).Property(string)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/TestProjects.cs",
+      "line": 100,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TestProjects",
+      "member": "Relative(string, string)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/TestProjects.cs",
+      "line": 100,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TestRunner",
+      "member": "Build(string, string?, IReadOnlyList<TestProject>, string, CancellationToken)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/TestRunner.cs",
+      "line": 83.3,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TestRunner",
+      "member": "CheckFreshBuild(string, IReadOnlyList<TestProject>)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/TestRunner.cs",
+      "line": 93.3,
+      "branch": 85.7
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TestRunner",
+      "member": "Collect(string, TestProject, string, ProcessResult)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/TestRunner.cs",
+      "line": 61.5,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TestRunner",
+      "member": "Distinct(IEnumerable<string>)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/TestRunner.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TestRunner",
+      "member": "Run(string, IReadOnlyList<TestProject>, CoverRequest, string, IReadOnlyList<string>, CancellationToken)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/TestRunner.cs",
+      "line": 88.8,
+      "branch": 87.5
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TestRunner",
+      "member": "RunMtp(string, TestProject, string, IReadOnlyList<string>, CancellationToken)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/TestRunner.cs",
+      "line": 66.6,
+      "branch": 75
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TestRunner",
+      "member": "RunVSTest(string, TestProject, string, string, IReadOnlyList<string>, CancellationToken)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/TestRunner.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TextReport",
+      "member": "Branch(BranchInfo)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/TextReport.cs",
+      "line": 100,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TextReport",
+      "member": "DiffGaps(DiffSection?, TextWriter)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/TextReport.cs",
+      "line": 100,
+      "branch": 80
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TextReport",
+      "member": "Dotted(string?)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/TextReport.cs",
+      "line": 100,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TextReport",
+      "member": "Finding(Finding, TextWriter)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/TextReport.cs",
+      "line": 90,
+      "branch": 37.5
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TextReport",
+      "member": "Header(CoverReport, TextWriter)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/TextReport.cs",
+      "line": 100,
+      "branch": 57.1
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TextReport",
+      "member": "Hotspots(IReadOnlyList<string>, TextWriter)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/TextReport.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TextReport",
+      "member": "Pct(double?)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/TextReport.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TextReport",
+      "member": "Type(TypeReport, TextWriter)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/TextReport.cs",
+      "line": 100,
+      "branch": 87.5
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TextReport",
+      "member": "Worklist(WorklistSection, TextWriter)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/TextReport.cs",
+      "line": 100,
+      "branch": 63.6
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TextReport",
+      "member": "Write(CoverReport, TextWriter)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/TextReport.cs",
+      "line": 92.3,
+      "branch": 79.1
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TextReport",
+      "member": "WriteDoctor(DoctorReport, TextWriter)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/TextReport.cs",
+      "line": 71.4,
+      "branch": 42.8
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TypeSection",
+      "member": "Member(MemberCoverage)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/TypeSection.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TypeSection",
+      "member": "MemberMatches(SourceMember, string)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/TypeSection.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.TypeSection",
+      "member": "Types(CoverageModel, string?)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/TypeSection.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.WorklistSectionBuilder",
+      "member": "BelowCounts(RunState)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/WorklistSectionBuilder.cs",
+      "line": 100,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.WorklistSectionBuilder",
+      "member": "Count(RunState, (double Line, double? Branch, string Source, string Level), string)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/WorklistSectionBuilder.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.WorklistSectionBuilder",
+      "member": "Worklist(RunState, TestLocator, int)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/WorklistSectionBuilder.cs",
+      "line": 86.6,
+      "branch": 38.8
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.WorklistSectionBuilder",
+      "member": "WorklistSettings(RunState)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/WorklistSectionBuilder.cs",
+      "line": 87.5,
+      "branch": 70
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.BaselineRecorder",
+      "member": "Debt(Finding)",
+      "file": "src/Codemetr.CSharp.Cover/BaselineRecorder.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.BaselineRecorder",
+      "member": "Floor(MemberCoverage)",
+      "file": "src/Codemetr.CSharp.Cover/BaselineRecorder.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.BaselineRecorder",
+      "member": "Initial(GuardInput, GuardResult, string?)",
+      "file": "src/Codemetr.CSharp.Cover/BaselineRecorder.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.BaselineRecorder",
+      "member": "LowerSkips(CoverBaseline, GuardInput)",
+      "file": "src/Codemetr.CSharp.Cover/BaselineRecorder.cs",
+      "line": 100,
+      "branch": 75
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.BaselineRecorder",
+      "member": "Max(double?, double?)",
+      "file": "src/Codemetr.CSharp.Cover/BaselineRecorder.cs",
+      "line": 100,
+      "branch": 75
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.BaselineRecorder",
+      "member": "RaisedFloors(CoverBaseline, GuardInput, GuardResult)",
+      "file": "src/Codemetr.CSharp.Cover/BaselineRecorder.cs",
+      "line": 100,
+      "branch": 75
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.BaselineRecorder",
+      "member": "ShrunkDebt(CoverBaseline, GuardResult)",
+      "file": "src/Codemetr.CSharp.Cover/BaselineRecorder.cs",
+      "line": 85.7,
+      "branch": 66.6
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.BaselineRecorder",
+      "member": "StricterThresholds(CoverBaseline, GuardInput)",
+      "file": "src/Codemetr.CSharp.Cover/BaselineRecorder.cs",
+      "line": 100,
+      "branch": 83.3
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.BaselineRecorder",
+      "member": "Tighten(CoverBaseline, GuardInput, GuardResult, string?)",
+      "file": "src/Codemetr.CSharp.Cover/BaselineRecorder.cs",
+      "line": 90.9,
+      "branch": 55.5
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverBaseline",
+      "member": "Load(string)",
+      "file": "src/Codemetr.CSharp.Cover/CoverBaseline.cs",
+      "line": 62.5,
+      "branch": 44.4
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverBaseline",
+      "member": "Save(string)",
+      "file": "src/Codemetr.CSharp.Cover/CoverBaseline.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverBaseline",
+      "member": "Sorted()",
+      "file": "src/Codemetr.CSharp.Cover/CoverBaseline.cs",
+      "line": 57.1
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.DebtEntry",
+      "member": "Key.get",
+      "file": "src/Codemetr.CSharp.Cover/CoverBaseline.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.ExclusionEntry",
+      "member": "Key.get",
+      "file": "src/Codemetr.CSharp.Cover/CoverBaseline.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.MemberFloor",
+      "member": "Key.get",
+      "file": "src/Codemetr.CSharp.Cover/CoverBaseline.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverConfig",
+      "member": "Effective.get",
+      "file": "src/Codemetr.CSharp.Cover/CoverConfig.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverConfig",
+      "member": "Glob(string)",
+      "file": "src/Codemetr.CSharp.Cover/CoverConfig.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverConfig",
+      "member": "Load(string)",
+      "file": "src/Codemetr.CSharp.Cover/CoverConfig.cs",
+      "line": 86.6,
+      "branch": 63.8
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverConfig",
+      "member": "RulesFor(string, string?)",
+      "file": "src/Codemetr.CSharp.Cover/CoverConfig.cs",
+      "line": 100,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverConfig",
+      "member": "StripGenerics(string)",
+      "file": "src/Codemetr.CSharp.Cover/CoverConfig.cs",
+      "line": 100,
+      "branch": 62.5
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverRules",
+      "member": "ByRule()",
+      "file": "src/Codemetr.CSharp.Cover/CoverConfig.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverRules",
+      "member": "Merge(CoverRules?)",
+      "file": "src/Codemetr.CSharp.Cover/CoverConfig.cs",
+      "line": 100,
+      "branch": 75
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverRules",
+      "member": "Validate(string)",
+      "file": "src/Codemetr.CSharp.Cover/CoverConfig.cs",
+      "line": 100,
+      "branch": 85.7
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverGuard",
+      "member": "DiffThresholds(List<Finding>, DiffCoverage, CoverRules)",
+      "file": "src/Codemetr.CSharp.Cover/CoverGuard.cs",
+      "line": 75,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverGuard",
+      "member": "Entity(string, MemberCoverage, double, double, string)",
+      "file": "src/Codemetr.CSharp.Cover/CoverGuard.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverGuard",
+      "member": "Evaluate(GuardInput)",
+      "file": "src/Codemetr.CSharp.Cover/CoverGuard.cs",
+      "line": 67.4,
+      "branch": 78.1
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverGuard",
+      "member": "Initial(GuardInput, GuardResult, string?)",
+      "file": "src/Codemetr.CSharp.Cover/CoverGuard.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverGuard",
+      "member": "Pct(double?)",
+      "file": "src/Codemetr.CSharp.Cover/CoverGuard.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverGuard",
+      "member": "Run(string, double, double, string)",
+      "file": "src/Codemetr.CSharp.Cover/CoverGuard.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverGuard",
+      "member": "RunThresholds(List<Finding>, CoverageCount, CoverRules)",
+      "file": "src/Codemetr.CSharp.Cover/CoverGuard.cs",
+      "line": 80,
+      "branch": 43.7
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverGuard",
+      "member": "Tests(List<Finding>, IReadOnlyList<ProjectTests>, CoverBaseline?)",
+      "file": "src/Codemetr.CSharp.Cover/CoverGuard.cs",
+      "line": 100,
+      "branch": 92.8
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverGuard",
+      "member": "Tighten(CoverBaseline, GuardInput, GuardResult, string?)",
+      "file": "src/Codemetr.CSharp.Cover/CoverGuard.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.GuardResult",
+      "member": "Passed.get",
+      "file": "src/Codemetr.CSharp.Cover/CoverGuard.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverRuleIds",
+      "member": "HigherIsWorse(string)",
+      "file": "src/Codemetr.CSharp.Cover/CoverRuleIds.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverRuleIds",
+      "member": "Hint(string)",
+      "file": "src/Codemetr.CSharp.Cover/CoverRuleIds.cs",
+      "line": 80,
+      "branch": 46.8
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverageData",
+      "member": ".ctor(StringComparer?)",
+      "file": "src/Codemetr.CSharp.Cover/CoverageData.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverageData",
+      "member": "Add(string, int, LineHit)",
+      "file": "src/Codemetr.CSharp.Cover/CoverageData.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverageData",
+      "member": "Contains(string)",
+      "file": "src/Codemetr.CSharp.Cover/CoverageData.cs",
+      "line": 0
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverageData",
+      "member": "Files.get",
+      "file": "src/Codemetr.CSharp.Cover/CoverageData.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverageData",
+      "member": "Lines(string)",
+      "file": "src/Codemetr.CSharp.Cover/CoverageData.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverageData",
+      "member": "Merge(CoverageData)",
+      "file": "src/Codemetr.CSharp.Cover/CoverageData.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverageCount",
+      "member": "BranchPercent.get",
+      "file": "src/Codemetr.CSharp.Cover/CoverageModel.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverageCount",
+      "member": "BranchRatio.get",
+      "file": "src/Codemetr.CSharp.Cover/CoverageModel.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverageCount",
+      "member": "LinePercent.get",
+      "file": "src/Codemetr.CSharp.Cover/CoverageModel.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverageCount",
+      "member": "LineRatio.get",
+      "file": "src/Codemetr.CSharp.Cover/CoverageModel.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverageCount",
+      "member": "Of(IEnumerable<LineHit>)",
+      "file": "src/Codemetr.CSharp.Cover/CoverageModel.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverageCount",
+      "member": "Percent(double?)",
+      "file": "src/Codemetr.CSharp.Cover/CoverageModel.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverageCount",
+      "member": "operator +(CoverageCount, CoverageCount)",
+      "file": "src/Codemetr.CSharp.Cover/CoverageModel.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverageModel",
+      "member": ".ctor(IReadOnlyList<FileCoverage>, IReadOnlyList<MemberCoverage>, IReadOnlyList<TypeCoverage>, IReadOnlyList<SkippedCode>, IReadOnlyList<SkippedCode>, int)",
+      "file": "src/Codemetr.CSharp.Cover/CoverageModel.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverageModel",
+      "member": "Build(IReadOnlyList<SourceFile>, CoverageData, string)",
+      "file": "src/Codemetr.CSharp.Cover/CoverageModel.cs",
+      "line": 100,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverageModel",
+      "member": "CountLines(IReadOnlyDictionary<string, IReadOnlySet<int>>, out List<(string File, int Line, SourceMember? Member)>)",
+      "file": "src/Codemetr.CSharp.Cover/CoverageModel.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverageModel",
+      "member": "File(string)",
+      "file": "src/Codemetr.CSharp.Cover/CoverageModel.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverageModel",
+      "member": "Restrict(Func<string, bool>)",
+      "file": "src/Codemetr.CSharp.Cover/CoverageModel.cs",
+      "line": 83.3,
+      "branch": 12.5
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.MemberCoverage",
+      "member": "Crap.get",
+      "file": "src/Codemetr.CSharp.Cover/CoverageModel.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverageReportReader",
+      "member": "IsRooted(string)",
+      "file": "src/Codemetr.CSharp.Cover/CoverageReportReader.cs",
+      "line": 100,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverageReportReader",
+      "member": "Join(string, string)",
+      "file": "src/Codemetr.CSharp.Cover/CoverageReportReader.cs",
+      "line": 100,
+      "branch": 75
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverageReportReader",
+      "member": "Locate(XElement, Dictionary<string, string>, string)",
+      "file": "src/Codemetr.CSharp.Cover/CoverageReportReader.cs",
+      "line": 100,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverageReportReader",
+      "member": "ParseCondition(string?)",
+      "file": "src/Codemetr.CSharp.Cover/CoverageReportReader.cs",
+      "line": 100,
+      "branch": 75
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverageReportReader",
+      "member": "ParseHits(string?)",
+      "file": "src/Codemetr.CSharp.Cover/CoverageReportReader.cs",
+      "line": 100,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverageReportReader",
+      "member": "Read(string)",
+      "file": "src/Codemetr.CSharp.Cover/CoverageReportReader.cs",
+      "line": 100,
+      "branch": 75
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverageReportReader",
+      "member": "ReadCobertura(XElement)",
+      "file": "src/Codemetr.CSharp.Cover/CoverageReportReader.cs",
+      "line": 100,
+      "branch": 72.2
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverageReportReader",
+      "member": "ReadOpenCover(XElement)",
+      "file": "src/Codemetr.CSharp.Cover/CoverageReportReader.cs",
+      "line": 100,
+      "branch": 78.5
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoverageReportReader",
+      "member": "ResolveCoberturaPath(string, string[])",
+      "file": "src/Codemetr.CSharp.Cover/CoverageReportReader.cs",
+      "line": 100,
+      "branch": 70
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.DebtMatcher",
+      "member": "Match(List<Finding>, CoverBaseline?, HashSet<string>, GuardInput, CoverageModel, List<StaleEntry>)",
+      "file": "src/Codemetr.CSharp.Cover/DebtMatcher.cs",
+      "line": 95.4,
+      "branch": 65.9
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.DebtMatcher",
+      "member": "Stale(DebtEntry, double?, string)",
+      "file": "src/Codemetr.CSharp.Cover/DebtMatcher.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.FileLayer",
+      "member": ".ctor(SourceFile, IReadOnlyDictionary<int, LineHit>?, string)",
+      "file": "src/Codemetr.CSharp.Cover/FileLayer.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.FileLayer",
+      "member": "AddUnreportedInitializers()",
+      "file": "src/Codemetr.CSharp.Cover/FileLayer.cs",
+      "line": 66.6,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.FileLayer",
+      "member": "IsUninstrumented(int)",
+      "file": "src/Codemetr.CSharp.Cover/FileLayer.cs",
+      "line": 100,
+      "branch": 87.5
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.FileLayer",
+      "member": "JudgeMember(int)",
+      "file": "src/Codemetr.CSharp.Cover/FileLayer.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.FileLayer",
+      "member": "Measure(int)",
+      "file": "src/Codemetr.CSharp.Cover/FileLayer.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.FileLayer",
+      "member": "TakeReportedLines()",
+      "file": "src/Codemetr.CSharp.Cover/FileLayer.cs",
+      "line": 100,
+      "branch": 92.8
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.CoveragePercent",
+      "member": "Of(CoverageCount)",
+      "file": "src/Codemetr.CSharp.Cover/Finding.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Finding",
+      "member": "Fails.get",
+      "file": "src/Codemetr.CSharp.Cover/Finding.cs",
+      "line": 100,
+      "branch": 75
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Finding",
+      "member": "Format(IEnumerable<int[]>)",
+      "file": "src/Codemetr.CSharp.Cover/Finding.cs",
+      "line": 100,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Finding",
+      "member": "Key.get",
+      "file": "src/Codemetr.CSharp.Cover/Finding.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Finding",
+      "member": "Number(double)",
+      "file": "src/Codemetr.CSharp.Cover/Finding.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Finding",
+      "member": "Ranges(IEnumerable<int>)",
+      "file": "src/Codemetr.CSharp.Cover/Finding.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Finding",
+      "member": "WithDetails(MemberCoverage)",
+      "file": "src/Codemetr.CSharp.Cover/Finding.cs",
+      "line": 90.9,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.FloorRatchet",
+      "member": "Floors(List<Finding>, CoverageModel, CoverBaseline, GuardInput, List<MemberFloor>)",
+      "file": "src/Codemetr.CSharp.Cover/FloorRatchet.cs",
+      "line": 100,
+      "branch": 75
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.FloorRatchet",
+      "member": "Inventory(List<Finding>, GuardInput, CoverBaseline)",
+      "file": "src/Codemetr.CSharp.Cover/FloorRatchet.cs",
+      "line": 100,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.FloorRatchet",
+      "member": "Pct(double?)",
+      "file": "src/Codemetr.CSharp.Cover/FloorRatchet.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.FloorRatchet",
+      "member": "ThresholdsLowered(List<Finding>, CoverRules, CoverBaseline)",
+      "file": "src/Codemetr.CSharp.Cover/FloorRatchet.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.GuardText",
+      "member": "Pct(double?)",
+      "file": "src/Codemetr.CSharp.Cover/GuardText.cs",
+      "line": 100,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.LineHit",
+      "member": "Merge(LineHit)",
+      "file": "src/Codemetr.CSharp.Cover/LineHit.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.PathMapper",
+      "member": ".ctor(string, IEnumerable<(string From, string To)>?, bool?)",
+      "file": "src/Codemetr.CSharp.Cover/PathMapper.cs",
+      "line": 100,
+      "branch": 83.3
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.PathMapper",
+      "member": "Comparer.get",
+      "file": "src/Codemetr.CSharp.Cover/PathMapper.cs",
+      "line": 100,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.PathMapper",
+      "member": "Map(CoverageData)",
+      "file": "src/Codemetr.CSharp.Cover/PathMapper.cs",
+      "line": 100,
+      "branch": 83.3
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.PathMapper",
+      "member": "Normalize(string)",
+      "file": "src/Codemetr.CSharp.Cover/PathMapper.cs",
+      "line": 100,
+      "branch": 81.2
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.PathMapper",
+      "member": "Relative(string)",
+      "file": "src/Codemetr.CSharp.Cover/PathMapper.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.SourceFile",
+      "member": ".ctor(string, IReadOnlyList<SourceType>, IReadOnlyList<SourceMember>, IReadOnlyList<int>, string[], IReadOnlyList<(int Line, string Code)>)",
+      "file": "src/Codemetr.CSharp.Cover/SourceModel.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.SourceFile",
+      "member": "Innermost(int, (int Start, int End)[])",
+      "file": "src/Codemetr.CSharp.Cover/SourceModel.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.SourceFile",
+      "member": "LineText(int)",
+      "file": "src/Codemetr.CSharp.Cover/SourceModel.cs",
+      "line": 0,
+      "branch": 0
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.SourceFile",
+      "member": "MemberAt(int)",
+      "file": "src/Codemetr.CSharp.Cover/SourceModel.cs",
+      "line": 100,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.SourceFile",
+      "member": "MemberIndexAt(int)",
+      "file": "src/Codemetr.CSharp.Cover/SourceModel.cs",
+      "line": 100,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.SourceFile",
+      "member": "TypeAt(int)",
+      "file": "src/Codemetr.CSharp.Cover/SourceModel.cs",
+      "line": 100,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.SourceMember",
+      "member": "Key.get",
+      "file": "src/Codemetr.CSharp.Cover/SourceModel.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.SourceModel",
+      "member": "Build(IReadOnlyList<SourceDocument>, CancellationToken)",
+      "file": "src/Codemetr.CSharp.Cover/SourceModel.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.SourceModel",
+      "member": "Model(SourceDocument, CompilationUnitSyntax, TypeMetrics[])",
+      "file": "src/Codemetr.CSharp.Cover/SourceModel.cs",
+      "line": 100,
+      "branch": 75
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.SourceModel",
+      "member": "Model(SourceDocument, CompilationUnitSyntax, TypeMetrics[]).ExcludedBy(int)",
+      "file": "src/Codemetr.CSharp.Cover/SourceModel.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.SourceSyntax",
+      "member": "Conditions(CompilationUnitSyntax)",
+      "file": "src/Codemetr.CSharp.Cover/SourceSyntax.cs",
+      "line": 73.6,
+      "branch": 76.9
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.SourceSyntax",
+      "member": "Exclusions(CompilationUnitSyntax)",
+      "file": "src/Codemetr.CSharp.Cover/SourceSyntax.cs",
+      "line": 94.1,
+      "branch": 83.3
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.SourceSyntax",
+      "member": "ExecutableLines(CompilationUnitSyntax)",
+      "file": "src/Codemetr.CSharp.Cover/SourceSyntax.cs",
+      "line": 86.6,
+      "branch": 88.2
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.SourceSyntax",
+      "member": "Line(SyntaxToken)",
+      "file": "src/Codemetr.CSharp.Cover/SourceSyntax.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.SourceSyntax",
+      "member": "Shorten(string)",
+      "file": "src/Codemetr.CSharp.Cover/SourceSyntax.cs",
+      "line": 100,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.TestLocator",
+      "member": ".ctor(string, IEnumerable<string>)",
+      "file": "src/Codemetr.CSharp.Cover/TestLocator.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.TestLocator",
+      "member": "For(string)",
+      "file": "src/Codemetr.CSharp.Cover/TestLocator.cs",
+      "line": 100,
+      "branch": 40
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.TestCounts",
+      "member": "ReadTrx(string)",
+      "file": "src/Codemetr.CSharp.Cover/TestResults.cs",
+      "line": 90,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.TestCounts",
+      "member": "ReadTrx(string).Count(string)",
+      "file": "src/Codemetr.CSharp.Cover/TestResults.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.TestCounts",
+      "member": "operator +(TestCounts, TestCounts)",
+      "file": "src/Codemetr.CSharp.Cover/TestResults.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.UnifiedDiff",
+      "member": "Count(Group)",
+      "file": "src/Codemetr.CSharp.Cover/UnifiedDiff.cs",
+      "line": 100,
+      "branch": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.UnifiedDiff",
+      "member": "Parse(string)",
+      "file": "src/Codemetr.CSharp.Cover/UnifiedDiff.cs",
+      "line": 95.4,
+      "branch": 75
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.UnifiedDiff",
+      "member": "PathOf(string)",
+      "file": "src/Codemetr.CSharp.Cover/UnifiedDiff.cs",
+      "line": 83.3,
+      "branch": 66.6
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Worklist",
+      "member": "Build(CoverageModel, double, double?, string, string, IReadOnlyDictionary<string, string>?)",
+      "file": "src/Codemetr.CSharp.Cover/Worklist.cs",
+      "line": 82.6,
+      "branch": 87.5
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Worklist",
+      "member": "Item(Place, CoverageCount, double, double?)",
+      "file": "src/Codemetr.CSharp.Cover/Worklist.cs",
+      "line": 100,
+      "branch": 85.7
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Worklist",
+      "member": "Missing(int, int, double)",
+      "file": "src/Codemetr.CSharp.Cover/Worklist.cs",
+      "line": 100
+    }
+  ],
+  "debt": [],
+  "tests": [
+    {
+      "project": "tests/Codemetr.CSharp.Cover.Tests/Codemetr.CSharp.Cover.Tests.csproj",
+      "skipped": 0
+    }
+  ],
+  "exclusions": [
+    {
+      "kind": "glob",
+      "pattern": "tests/fixtures/**"
+    }
+  ]
+}

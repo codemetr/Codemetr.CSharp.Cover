@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>codemetr-csharp-cover</ToolCommandName>
+    <PackageId>Codemetr.CSharp.Cover.Tool</PackageId>
+    <RootNamespace>Codemetr.CSharp.Cover.Tool</RootNamespace>
+    <RollForward>Major</RollForward>
+    <Description>codemetr-csharp-cover command line: C# test coverage per type and member (Coverlet, xUnit/NUnit/MSTest, VSTest and Microsoft.Testing.Platform) as JSON for coding agents and CI, with diff coverage, CRAP risk, worklists, a guard and a ratchet baseline.</Description>
+    <PackageTags>code-coverage;coverlet;diff-coverage;crap;guard;dotnet-tool</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Codemetr.CSharp.Cover/Codemetr.CSharp.Cover.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../README.md" Pack="true" PackagePath="README.md" />
+    <InternalsVisibleTo Include="Codemetr.CSharp.Cover.Tests" />
+  </ItemGroup>
+  <Import Project="../../eng/CodemetrCSharp.targets" />
+</Project>

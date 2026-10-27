@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Lib/Lib.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/MSTestT/MSTestT.csproj" />
+    <Project Path="tests/NUnitT/NUnitT.csproj" />
+    <Project Path="tests/XunitV2/XunitV2.csproj" />
+    <Project Path="tests/XunitV3/XunitV3.csproj" />
+  </Folder>
+</Solution>
