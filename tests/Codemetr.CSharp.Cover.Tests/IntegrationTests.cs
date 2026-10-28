@@ -15,8 +15,14 @@ internal sealed class IntegrationFactAttribute : FactAttribute
 
 public sealed class IntegrationTests
 {
-    static string Fixture([System.Runtime.CompilerServices.CallerFilePath] string here = "") =>
-        Path.Combine(Path.GetDirectoryName(here)!, "..", "fixtures", "Sample");
+    // Deterministic CI builds rewrite source paths to /_/, so the fixture is found from the test output upwards.
+    static string Fixture()
+    {
+        for (var directory = new DirectoryInfo(AppContext.BaseDirectory); directory is not null; directory = directory.Parent)
+            if (File.Exists(Path.Combine(directory.FullName, "Codemetr.CSharp.Cover.slnx")))
+                return Path.Combine(directory.FullName, "tests", "fixtures", "Sample");
+        throw new DirectoryNotFoundException("Repository root with Codemetr.CSharp.Cover.slnx not found above " + AppContext.BaseDirectory);
+    }
 
     static void Copy(string from, string to)
     {
