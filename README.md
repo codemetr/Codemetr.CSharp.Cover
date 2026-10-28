@@ -230,7 +230,8 @@ Rule ids: `lineCoverage`, `branchCoverage`, `typeLineCoverage`, `memberLineCover
   count per line, a lower bound.
 - coverlet.MTP does not instrument compiler-generated code such as local functions. A local function without data
   inside a member with data is listed as `uninstrumented` and not counted, instead of showing 0 %. If another
-  (VSTest) project reports it uncovered, it counts as uncovered.
+  (VSTest) project reports it uncovered, it counts as uncovered; the report then warns that MTP and VSTest data
+  are merged.
 - Estimated lines of unreported code follow statements and may differ slightly from what an engine would report.
 - No project files are read for preprocessor symbols; code in inactive `#if` branches is not measured.
 

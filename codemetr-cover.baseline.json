@@ -1,6 +1,7 @@
 {
   "schema": 1,
   "recordedAt": {
+    "head": "3a25612",
     "thresholds": {
       "lineCoverage": 0,
       "branchCoverage": 0,
@@ -125,8 +126,8 @@
       "type": "Codemetr.CSharp.Cover.Tool.CoverService",
       "member": "Model(RunContext, Evidence, IReadOnlyList<SourceFile>, IReadOnlyList<ParseError>)",
       "file": "src/Codemetr.CSharp.Cover.Tool/CoverService.cs",
-      "line": 80,
-      "branch": 72.2
+      "line": 100,
+      "branch": 75
     },
     {
       "type": "Codemetr.CSharp.Cover.Tool.CoverService",
@@ -350,6 +351,13 @@
       "file": "src/Codemetr.CSharp.Cover.Tool/GithubReport.cs",
       "line": 87.5,
       "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.Tool.ModelWarnings",
+      "member": "For(CoverageModel, Evidence, string)",
+      "file": "src/Codemetr.CSharp.Cover.Tool/ModelWarnings.cs",
+      "line": 100,
+      "branch": 100
     },
     {
       "type": "Codemetr.CSharp.Cover.Tool.TypeName",
@@ -1255,7 +1263,7 @@
       "member": "TakeReportedLines()",
       "file": "src/Codemetr.CSharp.Cover/FileLayer.cs",
       "line": 100,
-      "branch": 92.8
+      "branch": 100
     },
     {
       "type": "Codemetr.CSharp.Cover.CoveragePercent",
@@ -1417,7 +1425,7 @@
       "member": "TypeAt(int)",
       "file": "src/Codemetr.CSharp.Cover/SourceModel.cs",
       "line": 100,
-      "branch": 50
+      "branch": 66.6
     },
     {
       "type": "Codemetr.CSharp.Cover.SourceMember",
@@ -1481,6 +1489,25 @@
       "branch": 50
     },
     {
+      "type": "Codemetr.CSharp.Cover.TestCounts",
+      "member": "ReadTrx(string)",
+      "file": "src/Codemetr.CSharp.Cover/TestCounts.cs",
+      "line": 90,
+      "branch": 50
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.TestCounts",
+      "member": "ReadTrx(string).Count(string)",
+      "file": "src/Codemetr.CSharp.Cover/TestCounts.cs",
+      "line": 100
+    },
+    {
+      "type": "Codemetr.CSharp.Cover.TestCounts",
+      "member": "operator +(TestCounts, TestCounts)",
+      "file": "src/Codemetr.CSharp.Cover/TestCounts.cs",
+      "line": 100
+    },
+    {
       "type": "Codemetr.CSharp.Cover.TestLocator",
       "member": ".ctor(string, IEnumerable<string>)",
       "file": "src/Codemetr.CSharp.Cover/TestLocator.cs",
@@ -1493,25 +1520,6 @@
       "file": "src/Codemetr.CSharp.Cover/TestLocator.cs",
       "line": 100,
       "branch": 40
-    },
-    {
-      "type": "Codemetr.CSharp.Cover.TestCounts",
-      "member": "ReadTrx(string)",
-      "file": "src/Codemetr.CSharp.Cover/TestResults.cs",
-      "line": 90,
-      "branch": 50
-    },
-    {
-      "type": "Codemetr.CSharp.Cover.TestCounts",
-      "member": "ReadTrx(string).Count(string)",
-      "file": "src/Codemetr.CSharp.Cover/TestResults.cs",
-      "line": 100
-    },
-    {
-      "type": "Codemetr.CSharp.Cover.TestCounts",
-      "member": "operator +(TestCounts, TestCounts)",
-      "file": "src/Codemetr.CSharp.Cover/TestResults.cs",
-      "line": 100
     },
     {
       "type": "Codemetr.CSharp.Cover.UnifiedDiff",

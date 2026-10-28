@@ -58,14 +58,7 @@ internal static class CoverService
             model = model.Restrict(name => TypeName.Matches(name, type));
             if (model.Types.Count == 0 && parseErrors.Count == 0) throw new CoverInputException(InputErrorCodes.Usage, $"No measured type matches '{type}'");
         }
-        if (model.Uninstrumented.Count > 0)
-            context.Warnings.Add($"{model.Uninstrumented.Count} local function(s) have no coverage data although their enclosing member has (coverage engines such as "
-                + "coverlet.MTP skip compiler-generated code); they are not counted.");
-        if (model.Unmapped > 0)
-            context.Warnings.Add($"{model.Unmapped} covered line(s) lie outside any member or type of the current sources; sources and coverage may not match.");
-        var unreportedFiles = model.Files.Count(f => !f.Reported && f.Count.CoverableLines > 0);
-        if (unreportedFiles > 0 && context.Unreported == UnreportedMode.Zero)
-            context.Warnings.Add($"{unreportedFiles} file(s) have no coverage data and count as 0% (no test project covers them); see 'unreported'.");
+        context.Warnings.AddRange(ModelWarnings.For(model, evidence, context.Unreported));
         return model;
     }
 }

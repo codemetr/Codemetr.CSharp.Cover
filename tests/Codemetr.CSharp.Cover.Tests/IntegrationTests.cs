@@ -55,6 +55,7 @@ public sealed class IntegrationTests
         Assert.Equal(100.0, Line("Items(int)"));      // MSTest on MTP, iterator state machine
         Assert.Equal(100.0, Line("Local(int)"));      // xUnit v3 on MTP
         Assert.Equal(0.0, Line("Never(int)"));
+        Assert.Contains(report.GetProperty("warnings").EnumerateArray(), w => w.GetString()!.Contains("coverlet.MTP does not report local functions"));
 
         // The binaries are fresh: --no-build may reuse them. After a source change it must refuse.
         Assert.Equal(0, await Program.RunAsync(["analyze", "--root", dir.Path, "--no-build"], new StringReader(""), new StringWriter(), new StringWriter()));
