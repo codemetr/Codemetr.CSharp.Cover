@@ -1,6 +1,6 @@
-# Codemetr.CSharp.Cover agent rules
+# Contributing
 
-Global workspace instructions apply. Read `.github/RELEASING.md` before PR or release work.
+Read `.github/RELEASING.md` before PR or release work.
 
 - Keep the report contract: `schema` 1 only gains fields, rule ids and input error codes are never renamed, exit
   codes stay 0 passed, 1 findings, 2 input error. A crash must never report success.

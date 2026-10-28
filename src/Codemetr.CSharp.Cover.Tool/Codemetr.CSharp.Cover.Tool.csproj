@@ -6,7 +6,7 @@
     <PackageId>Codemetr.CSharp.Cover.Tool</PackageId>
     <RootNamespace>Codemetr.CSharp.Cover.Tool</RootNamespace>
     <RollForward>Major</RollForward>
-    <Description>codemetr-csharp-cover command line: C# test coverage per type and member (Coverlet, xUnit/NUnit/MSTest, VSTest and Microsoft.Testing.Platform) as JSON for coding agents and CI, with diff coverage, CRAP risk, worklists, a guard and a ratchet baseline.</Description>
+    <Description>codemetr-csharp-cover command line: C# test coverage per type and member (Coverlet, xUnit/NUnit/MSTest, VSTest and Microsoft.Testing.Platform) as JSON for developers, automation and CI, with diff coverage, CRAP risk, worklists, a guard and a ratchet baseline.</Description>
     <PackageTags>code-coverage;coverlet;diff-coverage;crap;guard;dotnet-tool</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>

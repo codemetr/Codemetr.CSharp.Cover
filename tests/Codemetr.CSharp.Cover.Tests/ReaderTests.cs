@@ -112,9 +112,9 @@ public sealed class PathMapperTests
     public void PathMapsTranslateReportsFromElsewhere()
     {
         var root = Path.Combine(Path.GetTempPath(), "repo");
-        var mapper = new PathMapper(root, [("/build/agent/", PathMapper.Normalize(root) + "/")], ignoreCase: true);
-        Assert.Equal("src/A.cs", mapper.Relative("/build/agent/src/A.cs"));
-        Assert.Equal("src/A.cs", mapper.Relative(@"\build\agent\src\A.cs"));
+        var mapper = new PathMapper(root, [("/build/runner/", PathMapper.Normalize(root) + "/")], ignoreCase: true);
+        Assert.Equal("src/A.cs", mapper.Relative("/build/runner/src/A.cs"));
+        Assert.Equal("src/A.cs", mapper.Relative(@"\build\runner\src\A.cs"));
     }
 }
 

@@ -3,9 +3,9 @@
 Status: implemented as version 0.1.0 (unreleased), 2026-10-27. Section 0 lists where the implementation deliberately
 differs from the first draft below; `README.md` is the user-facing reference.
 
-## 0. Implementation decisions and prototype findings
+## 0. Implementation decisions and findings
 
-Verified with a prototype solution (now `tests/fixtures/Sample`: xUnit v2 and NUnit on VSTest, MSTest and xUnit v3
+Verified with a sample solution (now `tests/fixtures/Sample`: xUnit v2 and NUnit on VSTest, MSTest and xUnit v3
 on Microsoft.Testing.Platform) and by running the tool on its own repository.
 
 - **Codemetr.CSharp library.** Not published on its own; it ships inside `Codemetr.CSharp.Tool`. The build references
@@ -38,7 +38,7 @@ on Microsoft.Testing.Platform) and by running the tool on its own repository.
 
 ## 1. Purpose
 
-`codemetr-csharp-cover` tells a coding agent (and CI) **which C# code is not covered by tests, what to test
+`codemetr-csharp-cover` tells developers, automation and CI **which C# code is not covered by tests, what to test
 next, and whether a change made coverage worse**. It is the sibling of `codemetr-csharp` and follows the same
 contract: one JSON report per run with a `schema`, stable rule ids, `message` and `hint` per finding, exit codes
 0/1/2, a configuration file and a tighten-only baseline.
@@ -153,7 +153,7 @@ project builds, and the exact fix command for anything missing. Exit 0 when ever
    - MTP: `--coverlet`, `--coverlet-output-format cobertura`, `--report-trx`, `--results-directory <run dir>`
 
    Existing runsettings, Coverlet settings in project files and `TEST_ARGS` are kept and win. The exact MTP
-   invocation (in particular under the .NET 10 `dotnet test` MTP mode) must be verified in the prototype for
+   invocation (in particular under the .NET 10 `dotnet test` MTP mode) must be verified with the sample solution for
    xUnit v3, MSTest and NUnit.
 5. **`--no-build` in `TEST_ARGS`** is allowed. Before the run, each test project's output assembly must be newer
    than every `.cs` and project file of the project and its project references; otherwise exit 2
@@ -231,7 +231,7 @@ assembly) would otherwise disappear from the numbers.
 ## 7. Diff coverage
 
 - `--base REF`: changed lines = `git diff merge-base(REF, HEAD)` plus uncommitted and untracked changes in the
-  working tree. Default: config `diff.base`, else `HEAD` (only uncommitted work – the agent loop). CI passes
+  working tree. Default: config `diff.base`, else `HEAD` (only uncommitted work, for local runs). CI passes
   `--base origin/main`.
 - `--diff-file`: a unified diff instead of git.
 - Base, merge base and head are always in `provenance.diff`. An unresolvable base (shallow clone) is exit 2 with
@@ -460,7 +460,7 @@ accident. Test projects are not measured unless a path or `exclude` says otherwi
 
 ## 15. Skills plugin `codemetr-csharp-cover`
 
-In `codemetr/skills`, next to `codemetr-csharp`, with the same portability rules (`AGENTS.md`):
+In `codemetr/skills`, next to `codemetr-csharp`, with the same portability rules:
 
 - `skills/analyze/SKILL.md`: overview, untested members, worklist (`--below`), risk; explains measured values
   and scope; never edits code unless asked.
@@ -491,7 +491,7 @@ Codemetr.CSharp.Cover/
 
 CI also runs the tool on its own repository (`check`), like the sibling's "guard own sources" step.
 
-## 17. Risks to settle in the prototype
+## 17. Risks to settle with the sample solution
 
 1. Exact `dotnet test` invocation and output location for `coverlet.MTP` under the .NET 10 MTP mode, for
    xUnit v3, MSTest and NUnit.

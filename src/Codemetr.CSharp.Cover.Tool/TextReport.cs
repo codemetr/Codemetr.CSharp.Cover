@@ -2,7 +2,7 @@ using Codemetr.CSharp.Cover;
 
 namespace Codemetr.CSharp.Cover.Tool;
 
-/// <summary>Human- and agent-readable rendering of a report, grep-able as file:line: [status] rule.</summary>
+/// <summary>Readable rendering of a report, grep-able as file:line: [status] rule.</summary>
 internal static class TextReport
 {
     public static void Write(CoverReport report, TextWriter output)

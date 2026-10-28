@@ -2,7 +2,7 @@
 
 [![ci](https://github.com/codemetr/Codemetr.CSharp.Cover/actions/workflows/ci.yml/badge.svg)](https://github.com/codemetr/Codemetr.CSharp.Cover/actions/workflows/ci.yml)
 
-C# test coverage per **type and member** for coding agents and CI. It runs the tests with
+C# test coverage per **type and member** for developers, automation and CI. It runs the tests with
 [Coverlet](https://github.com/coverlet-coverage/coverlet) (open source; xUnit, NUnit and MSTest on VSTest and on
 Microsoft.Testing.Platform) or reads existing Cobertura/OpenCover reports. It lays the coverage over the source and
 reports what is not tested, what to test next, and whether a change made coverage worse. Like its sibling
@@ -91,7 +91,7 @@ member. Async methods and iterators (compiler-generated state machines) map back
 ## Diff coverage
 
 `--base REF` compares against `merge-base(REF, HEAD)` plus uncommitted and untracked changes. The default is
-`diff.base` from the configuration, else `HEAD`, which means only uncommitted work and fits a local agent loop. In
+`diff.base` from the configuration, else `HEAD`, which means only uncommitted work and fits a local edit-and-check loop. In
 CI pass `--base origin/main` with `fetch-depth: 0`, or `--diff-file` with a unified diff. Base, merge base and head
 are in `provenance.diff`. Changed lines in generated or excluded files are a finding (`unmeasuredChange`).
 
@@ -209,7 +209,7 @@ Rule ids: `lineCoverage`, `branchCoverage`, `typeLineCoverage`, `memberLineCover
 
 ## Using it as a gate
 
-- Local and agent runs give fast feedback; the gate is a complete `check` in CI with the repository's configuration
+- Local runs give fast feedback; the gate is a complete `check` in CI with the repository's configuration
   and baseline. Protect `codemetr-cover.json` and `codemetr-cover.baseline.json` with code-owner review.
 - GitHub Actions, next to `codemetr-csharp`:
 
