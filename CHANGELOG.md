@@ -6,6 +6,7 @@
   `total` minus `executed`. Before, the report said "0 skipped" and `skippedTestsIncreased` never fired. Repositories
   whose baseline recorded 0 skips while tests were skipped now get that finding; record the skips with `baseline` or
   run the tests again.
+- `--output` creates missing folders, so the complete report can go to an ignored folder such as `TestResults/`.
 
 ## 0.1.0 - 2026-10-29
 

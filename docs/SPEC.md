@@ -114,7 +114,7 @@ Worklist (analyze only):
 
 Output:
   --format json|text|github   stdout format (default: json)
-  --output FILE          additionally write the complete JSON report (no --top limit) to FILE
+  --output FILE          additionally write the complete JSON report (no --top limit) to FILE (creates folders)
   --top N                items listed on stdout (default: 10); counts are always complete
   --member NAME          full line and branch map of the matching members
 

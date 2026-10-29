@@ -60,8 +60,11 @@ internal static class Program
         var state = CoverService.Run(options.Command, options.Request);
         var report = ReportBuilder.Build(state, complete: false);
         if (options.Output is not null)
-            await File.WriteAllTextAsync(Path.GetFullPath(options.Output, Path.GetFullPath(options.Request.Root)),
-                JsonSerializer.Serialize(ReportBuilder.Build(state, complete: true), Json) + "\n");
+        {
+            var output = Path.GetFullPath(options.Output, Path.GetFullPath(options.Request.Root));
+            Directory.CreateDirectory(Path.GetDirectoryName(output)!);
+            await File.WriteAllTextAsync(output, JsonSerializer.Serialize(ReportBuilder.Build(state, complete: true), Json) + "\n");
+        }
         switch (options.Format)
         {
             case CliOptions.Text: TextReport.Write(report, stdout); break;
