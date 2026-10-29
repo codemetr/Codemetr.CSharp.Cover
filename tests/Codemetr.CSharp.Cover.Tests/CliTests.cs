@@ -175,7 +175,7 @@ public sealed class CliTests
     {
         using var dir = Repository();
         dir.Write("none.diff", "");
-        var file = Path.Combine(dir.Path, "full.json");
+        var file = Path.Combine(dir.Path, "TestResults", "full.json");
         var (exit, _, _) = await Run(["analyze", .. Reports(dir, "--top", "0", "--output", file)]);
         Assert.Equal(0, exit);
         var types = Json(File.ReadAllText(file)).GetProperty("types");

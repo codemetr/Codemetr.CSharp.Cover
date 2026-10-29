@@ -9,6 +9,7 @@ Read `.github/RELEASING.md` before PR or release work.
 - Never edit a consumer's test projects from the tool; report the exact fix instead.
 - Run `dotnet test` and, before merging, the self checks of `.github/workflows/ci.yml`:
   `CODEMETR_COVER_INTEGRATION=1` for the integration test, `codemetr-csharp check src` for metrics and
-  `codemetr-csharp-cover check` for coverage.
+  `codemetr-csharp-cover check` for coverage. The coverage check sets that variable itself (`codemetr-cover.json`),
+  because the baseline is recorded with the integration test.
 - Update `README.md`, `CHANGELOG.md` and `docs/SPEC.md` with behaviour changes, and the skills in
   `codemetr/skills` (plugin `codemetr-csharp-cover`) when commands, options or exit codes change.

@@ -162,7 +162,7 @@ complete run.
 
 ```json
 {
-  "schema": 1, "tool": "codemetr-csharp-cover", "version": "0.1.0", "command": "check", "passed": false, "complete": true,
+  "schema": 1, "tool": "codemetr-csharp-cover", "version": "0.1.1", "command": "check", "passed": false, "complete": true,
   "provenance": {
     "source": "run", "head": "9f3c2e1", "dirty": true, "unreported": "zero",
     "testProjects": [ { "project": "tests/Shop.Tests/Shop.Tests.csproj", "platform": "vstest", "engine": "coverlet.collector",

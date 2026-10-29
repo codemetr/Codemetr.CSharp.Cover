@@ -31,6 +31,9 @@ public sealed record TestCounts(int Total, int Passed, int Failed, int Skipped)
         int Count(string name) => (int?)counters.Attribute(name) ?? 0;
         var failed = Count("failed") + Count("error") + Count("timeout") + Count("aborted");
         var skipped = Count("notExecuted") + Count("inconclusive") + Count("notRunnable") + Count("disconnected") + Count("pending");
+        // The VSTest TRX logger leaves notExecuted at 0 for skipped tests; they only show as total minus executed.
+        if (counters.Attribute("executed") is not null)
+            skipped = Math.Max(skipped, Math.Min(Count("total") - Count("executed"), Count("total") - Count("passed") - failed));
         var total = Math.Max(Count("total"), Count("passed") + failed + skipped);
         return new TestCounts(total, Count("passed"), failed, skipped);
     }

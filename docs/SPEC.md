@@ -1,6 +1,6 @@
 # codemetr-csharp-cover – specification
 
-Status: implemented as version 0.1.0 (unreleased), 2026-10-27. Section 0 lists where the implementation deliberately
+Status: implemented as version 0.1.1, 2026-10-29. Section 0 lists where the implementation deliberately
 differs from the first draft below; `README.md` is the user-facing reference.
 
 ## 0. Implementation decisions and findings
@@ -114,7 +114,7 @@ Worklist (analyze only):
 
 Output:
   --format json|text|github   stdout format (default: json)
-  --output FILE          additionally write the complete JSON report (no --top limit) to FILE
+  --output FILE          additionally write the complete JSON report (no --top limit) to FILE (creates folders)
   --top N                items listed on stdout (default: 10); counts are always complete
   --member NAME          full line and branch map of the matching members
 
@@ -169,7 +169,9 @@ project builds, and the exact fix command for anything missing. Exit 0 when ever
   `foreignCoverage` (exit 2).
 - **Test results:** `check` and `baseline` need `--test-results` (TRX). Without them failed or skipped tests are
   invisible, so the run is refused (exit 2, `missingTestResults`) with the hint to add `--logger trx` (VSTest) or
-  `--report-trx` (MTP). `analyze` accepts reports without results and says so in `provenance`.
+  `--report-trx` (MTP). `analyze` accepts reports without results and says so in `provenance`. Skipped tests are
+  the larger of the not-run counters and `total` minus `executed` (the VSTest logger records skips only there),
+  at most the tests that neither passed nor failed.
 - **Duplicates:** two reports for the same test project from different runs (old `TestResults/<guid>` folders)
   are `duplicateReport` (exit 2).
 - **Missing projects:** every discovered test project must have a report; a missing one is `missingTestProject`
@@ -311,7 +313,7 @@ renamed.
 
 ```json
 {
-  "schema": 1, "tool": "codemetr-csharp-cover", "version": "0.1.0", "command": "check",
+  "schema": 1, "tool": "codemetr-csharp-cover", "version": "0.1.1", "command": "check",
   "passed": false, "complete": true,
   "provenance": {
     "source": "run", "head": "9f3c2e1", "dirty": true,
