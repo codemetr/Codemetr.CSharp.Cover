@@ -93,6 +93,31 @@ public sealed class ReaderTests
             """);
         Assert.Equal(new TestCounts(5, 2, 2, 1), TestCounts.ReadTrx(path));
     }
+
+    [Fact]
+    public void VSTestSkipsCountFromTotalMinusExecuted()
+    {
+        // Shape written by the VSTest TRX logger for one skipped xUnit test: notExecuted stays 0.
+        using var dir = new TempDirectory();
+        var path = dir.Write("r.trx", """
+            <TestRun xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+              <ResultSummary outcome="Completed"><Counters total="53" executed="52" passed="52" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" /></ResultSummary>
+            </TestRun>
+            """);
+        Assert.Equal(new TestCounts(53, 52, 0, 1), TestCounts.ReadTrx(path));
+    }
+
+    [Fact]
+    public void NotExecutedFailuresAreNotCountedTwice()
+    {
+        using var dir = new TempDirectory();
+        var path = dir.Write("r.trx", """
+            <TestRun xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+              <ResultSummary outcome="Failed"><Counters total="4" executed="2" passed="2" failed="0" error="0" timeout="0" aborted="1" notExecuted="0" /></ResultSummary>
+            </TestRun>
+            """);
+        Assert.Equal(new TestCounts(4, 2, 1, 1), TestCounts.ReadTrx(path));
+    }
 }
 
 public sealed class PathMapperTests

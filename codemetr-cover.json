@@ -2,5 +2,6 @@
   // The sample solution under tests/fixtures is test data for the integration test, not part of this run.
   "exclude": ["tests/fixtures/**"],
   // Coverage of optimized and unoptimized builds differs; the gate and the baseline use the same configuration.
-  "test": { "target": "Codemetr.CSharp.Cover.slnx", "configuration": "Release" }
+  // The baseline is recorded with the integration test (as in CI), so every run includes it; it needs NuGet access.
+  "test": { "target": "Codemetr.CSharp.Cover.slnx", "configuration": "Release", "args": ["-e", "CODEMETR_COVER_INTEGRATION=1"] }
 }
